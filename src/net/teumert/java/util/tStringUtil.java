@@ -13,6 +13,8 @@ public class tStringUtil {
 	public static String implode(Object[] source, String delimiter) {
 		StringBuilder sb = new StringBuilder(source[0].toString());
 		for (int i = 1; i < source.length; i++) {
+			if(source[i] == null)
+				break;
 			sb.append(delimiter);
 			sb.append(source[i].toString());
 		}		
