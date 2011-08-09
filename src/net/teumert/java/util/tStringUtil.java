@@ -1,10 +1,7 @@
 package net.teumert.java.util;
 
 import java.util.ArrayList;
-import java.util.Formatter;
 import java.util.Random;
-
-import de.lessvoid.nifty.tools.StringHelper;
 
 public class tStringUtil {
 	
