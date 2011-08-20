@@ -80,8 +80,7 @@ public class tStringUtil {
 				currentLine.add(word);
 			}
 			else {
-				String lineBuffer = justifyLine(currentLine, (letters - letterCounter));
-				lineWords.add(lineBuffer);				
+				lineWords.add(justifyLine(currentLine, (letters - letterCounter)));				
 				letterCounter = word.length();
 				currentLine = new ArrayList<String>();
 				currentLine.add(word);
