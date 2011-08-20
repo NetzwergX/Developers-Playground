@@ -69,20 +69,20 @@ public class tStringUtil {
 		
 		String[] words = message.split(" ");
 		
-		// wrap lines
-		String lineBuffer = words[0];
+		// wrap lines		
+		int letterCounter = words[0].length();
 		currentLine.add(words[0]);
 		// start with second word
 		for (int i = 1; i < words.length; i++) {
 			String word = words[i];
-			if ((lineBuffer + word).length() < letters) {
-				lineBuffer += (" " + word);
+			if ((letterCounter + word.length()) < letters) {
+				letterCounter += (" " + word).length();
 				currentLine.add(word);
 			}
 			else {
-				lineBuffer = justifyLine(currentLine, (letters - lineBuffer.length()));
-				lineWords.add(lineBuffer);
-				lineBuffer = word;
+				String lineBuffer = justifyLine(currentLine, (letters - letterCounter));
+				lineWords.add(lineBuffer);				
+				letterCounter = word.length();
 				currentLine = new ArrayList<String>();
 				currentLine.add(word);
 			}
