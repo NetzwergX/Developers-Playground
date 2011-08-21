@@ -47,12 +47,14 @@ public class tStringUtil {
 	
 	/**
 	 * Justifies a given paragraph of text. Only works with mono-spaced fonts.
+	 * Text MUST NOT contain double line breaks. Split text in chunks when you want
+	 * to justify more paragraphs.
 	 * 
 	 * @param message the text to be justified
 	 * @param letters the amount of letters that should be placed on one line.
 	 * @return array of strings, each element of the array is one justified line.
 	 */
-	public static String[] justifyParagraph(String message, int letters) {
+	public static String justifyParagraph(String message, int letters) {
 		
 		// remove line breaks
 		message = message.replace('\n', ' ');
@@ -64,7 +66,7 @@ public class tStringUtil {
 			replaced = message.replace("  ", " ");
 		}
 		
-		ArrayList<String> lineWords = new ArrayList<String>();
+		StringBuilder text = new StringBuilder();
 		ArrayList<String> currentLine = new ArrayList<String>();
 		
 		String[] words = message.split(" ");
@@ -79,8 +81,8 @@ public class tStringUtil {
 				letterCounter += (" " + word).length();
 				currentLine.add(word);
 			}
-			else {
-				lineWords.add(justifyLine(currentLine, (letters - letterCounter)));				
+			else {				
+				text.append(justifyLine(currentLine, (letters - letterCounter)));
 				letterCounter = word.length();
 				currentLine = new ArrayList<String>();
 				currentLine.add(word);
@@ -88,8 +90,7 @@ public class tStringUtil {
 			
 		}
 		
-		String[] lines = new String[lineWords.size()];
-		return lineWords.toArray(lines);
+		return text.toString();
 	}
 	
 	/**
