@@ -27,14 +27,22 @@ and jme still is stuck with SVN ... brrr...). I have know almost 7 years of expe
 different aspects of the language. I'm firm with multiple GUI frameworks (AWT, Swing, SWT), i have quite e decent 
 knowledge of java networking and JDBC and many other things. Well, it comes with the time i guess...
 
+### jME
+I found jME after some tests with Java 3D (does this still exist?) and worked with jME from version 1 on. I saw it
+developing and jME2 was really fun working with. I#M very pleased that they got through all the struggle and are now
+on a very good way towards the first beta versions of jME3.
+
 
 PHP
 -------------------------------------------------------------------------------------------------------------------------
 
 PHP was my second programming language (i don't count javascript as programming language), and i still do very much in 
 PHP, although most of it (~90%) is based upon WoltLab Community Framework (WCF). I have roughly 4 years of experience 
-wit PHP.
+with PHP.
 
+### WCF
+I'm working with WoltLab Community Framework (WCF) almost from the beginning of my php career, and found it extremly pleasing, that WCF uses an object-
+oriented structure that is similar to java.
 
 SQL
 -------------------------------------------------------------------------------------------------------------------------
