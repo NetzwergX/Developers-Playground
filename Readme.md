@@ -62,7 +62,7 @@ License
 =========================================================================================================================
 
 All sources in this repo fall, if not stated otherwise within the file itself, under the terms of the 
-	GNU Lesser Peneral Public License.
+	GNU Lesser Peneral Public License <http://opensource.org/licenses/lgpl-license.php>.
 
 
 
