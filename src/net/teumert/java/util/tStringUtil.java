@@ -62,7 +62,7 @@ public class tStringUtil {
 	
 	/**
 	 * Justifies a given paragraph of text. Only works with mono-spaced fonts.
-	 * Text MUST NOT contain double line breaks. Split text in chunks when you want
+	 * Text MUST NOT contain double line breaks. Split text into chunks when you want
 	 * to justify more paragraphs.
 	 * 
 	 * @param message the text to be justified
@@ -92,12 +92,12 @@ public class tStringUtil {
 		// start with second word
 		for (int i = 1; i < words.length; i++) {
 			String word = words[i];
-			if ((letterCounter + word.length()) < letters) {
+			if ((letterCounter + word.length()) < letters) { 	// if word fits on that line, add it
 				letterCounter += (" " + word).length();
 				currentLine.add(word);
 			}
-			else {				
-				text.append(justifyLine(currentLine, (letters - letterCounter)));
+			else {							// otherwise justify line and add word to next line
+				text.append(justifyLine(currentLine, (letters - letterCounter)));	
 				letterCounter = word.length();
 				currentLine = new ArrayList<String>();
 				currentLine.add(word);
@@ -113,7 +113,7 @@ public class tStringUtil {
 	 * 
 	 * @param currentLine words that shall be placed on that line
 	 * @param plusWhite number of additional whitespace needed.
-	 * @return String containing the justified line.
+	 * @return the justified line.
 	 */
 	private static String justifyLine(ArrayList<String> currentLine, int plusWhite) {
 		
