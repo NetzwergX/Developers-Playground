@@ -1,6 +1,6 @@
 package net.teumert.java.util;
 
-import java.util.Hashtable;
+import java.util.Map;
 
 public class CommandLineParamUtil {
 	
@@ -11,7 +11,7 @@ public class CommandLineParamUtil {
 	 * @param map Hashtable to put the values in
 	 */
 	@SuppressWarnings({ "rawtypes", "unchecked" })
-	public static void storeParams(String[] args, Hashtable map) {
+	public static void storeParams(String[] args, Map map) {
 		String key = null;
 		for (String string : args) {
 			if (string.startsWith("--")) { // found key
