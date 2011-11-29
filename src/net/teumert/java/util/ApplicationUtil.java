@@ -12,6 +12,7 @@ public class ApplicationUtil {
 	 * in the following order:
 	 * Release = Final > RC = Release Candidate = Gamma > Beta > Alpha > Dev = Development = pre-Alpha > any other string
 	 * Numbers are considered greater then strings
+	 * Negative version numbers were not supported
 	 * @param v1 First version string
 	 * @param v2 Version string to compare against
 	 * @return 0 if equal, 1 if greater, -1 if lesser
