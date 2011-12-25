@@ -67,8 +67,7 @@ public class ApplicationUtil {
 			catch (NumberFormatException nfe) {
 				i2 = -9;
 			}
-			
-			System.out.println(i1 + " ? "  + i2);
+						
 			if(i1 > i2)
 				return 1;
 			else if(i1 < i2)
