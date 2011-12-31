@@ -74,4 +74,8 @@ All sources in this repo fall, if not stated otherwise within the file itself, u
 
 
 
+Notes:
+--------
+PHP Page Encoding
+http://allofetechnical.wordpress.com/2010/06/30/how-to-handle-page-encoding-in-php/
 
