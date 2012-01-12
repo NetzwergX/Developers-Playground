@@ -11,10 +11,3 @@ License
 All sources in this repo fall, if not stated otherwise within the file itself, under the terms of the 
 	GNU Lesser Peneral Public License <http://opensource.org/licenses/lgpl-license.php>.
 
-
-
-Notes:
---------
-PHP Page Encoding
-http://allofetechnical.wordpress.com/2010/06/30/how-to-handle-page-encoding-in-php/
-
