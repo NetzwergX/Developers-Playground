@@ -16,7 +16,7 @@ do
   test -d "$f.git/" && echo "GIT repository exists" || echo "GIT repository does not exists"
   if [ -d "$f.git/" ];
   then
-   git pull origin master   
+   git remote show | grep origin > dev/null && git pull origin master   
    git remote show | grep upstream > /dev/null && git push upstream master
   fi
   cd ..
