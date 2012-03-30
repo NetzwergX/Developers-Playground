@@ -12,7 +12,7 @@ for f in $FILES
 do
   echo "########################################"
   echo "Processing $f ..." 
-  cd $f    
+  cd "$f"    
   test -d "$f.git/" && echo "GIT repository exists" || echo "GIT repository does not exists"
   if [ -d "$f.git/" ];
   then
